@@ -1,0 +1,470 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Gigg – Hyderabad’s Local Job &amp; Gig Platform
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+   <div class="container mx-auto flex items-center justify-between px-6 py-4 max-w-7xl">
+    <a aria-label="Gigg homepage" class="flex items-center space-x-2 text-indigo-600 font-extrabold text-2xl" href="#">
+     <img alt="Gigg logo, stylized letter G in blue-purple gradient" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/255e19cf-d117-4357-fad9-61ec4af22872.jpg" width="40"/>
+     <span>
+      Gigg
+     </span>
+    </a>
+    <nav aria-label="Primary Navigation" class="hidden md:flex space-x-8 text-gray-700 font-semibold text-sm">
+     <a class="hover:text-indigo-600 transition" href="#hero">
+      Home
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#features">
+      Why Gigg?
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#areas">
+      Areas
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#post-job">
+      Post a Job
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#register">
+      Register
+     </a>
+     <a class="hover:text-indigo-600 transition" href="#contact">
+      Contact
+     </a>
+    </nav>
+    <div class="hidden md:flex space-x-4">
+     <button class="text-indigo-600 font-semibold hover:underline focus:outline-none" id="loginBtn">
+      Login
+     </button>
+     <button class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition font-semibold focus:outline-none" id="signupBtn">
+      Sign Up
+     </button>
+    </div>
+    <button aria-label="Toggle menu" class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+     <i class="fas fa-bars text-2xl">
+     </i>
+    </button>
+   </div>
+   <!-- Mobile Menu -->
+   <nav aria-label="Mobile Navigation" class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+    <a class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50" href="#hero">
+     Home
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50" href="#features">
+     Why Gigg?
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50" href="#areas">
+     Areas
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50" href="#post-job">
+     Post a Job
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50" href="#register">
+     Register
+    </a>
+    <a class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50" href="#contact">
+     Contact
+    </a>
+    <a class="block px-6 py-3 border-t border-gray-200 text-indigo-600 font-semibold hover:bg-indigo-50" href="#login">
+     Login
+    </a>
+    <a class="block px-6 py-3 text-white bg-indigo-600 font-semibold hover:bg-indigo-700" href="#register">
+     Sign Up
+    </a>
+   </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="bg-indigo-700 text-white py-20 px-6 md:px-0 flex flex-col md:flex-row items-center max-w-7xl mx-auto" id="hero">
+   <div class="md:w-1/2 text-center md:text-left">
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+     Find Work or Hire Help — Instantly in Hyderabad
+    </h1>
+    <p class="text-lg md:text-xl mb-6 max-w-xl mx-auto md:mx-0 flex items-center justify-center md:justify-start space-x-2">
+     <i class="fas fa-map-marker-alt text-yellow-400 text-xl">
+     </i>
+     <span class="font-semibold text-yellow-400">
+      Currently serving: Hyderabad
+     </span>
+    </p>
+    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 max-w-md mx-auto md:mx-0">
+     <button class="bg-yellow-400 text-indigo-900 font-semibold px-6 py-3 rounded-md hover:bg-yellow-500 transition focus:outline-none" id="getWorkBtn">
+      Get Work
+     </button>
+     <button class="border border-yellow-400 text-yellow-400 font-semibold px-6 py-3 rounded-md hover:bg-yellow-400 hover:text-indigo-900 transition focus:outline-none" id="postJobBtn">
+      Post a Job
+     </button>
+    </div>
+   </div>
+   <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+    <img alt="Illustration of Hyderabad city skyline with gig workers and clients" class="rounded-lg shadow-lg max-w-full h-auto" height="400" src="https://storage.googleapis.com/a1aa/image/fd80a6ea-fe37-43aa-502b-c71c7e5f8b7c.jpg" width="600"/>
+   </div>
+  </section>
+  <!-- Why Gigg Section -->
+  <section class="py-16 bg-yellow-50 max-w-7xl mx-auto px-6 text-indigo-900" id="features">
+   <h2 class="text-3xl font-bold mb-12 text-center">
+    Why Gigg?
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto text-center">
+    <div class="feature p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+     <h3 class="text-2xl mb-4">
+      📍 Hyderabad First
+     </h3>
+     <p class="text-gray-700">
+      Gigs only from your city — no clutter, just relevant jobs.
+     </p>
+    </div>
+    <div class="feature p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+     <h3 class="text-2xl mb-4">
+      ✅ Verified Workers
+     </h3>
+     <p class="text-gray-700">
+      All workers go through KYC and reference checks.
+     </p>
+    </div>
+    <div class="feature p-6 bg-white rounded-lg shadow hover:shadow-lg transition">
+     <h3 class="text-2xl mb-4">
+      💸 Instant Payout
+     </h3>
+     <p class="text-gray-700">
+      Get paid the same day for completed gigs.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Areas Section -->
+  <section class="py-16 bg-white max-w-7xl mx-auto px-6 text-indigo-900" id="areas">
+   <h2 class="text-3xl font-bold mb-8 text-center">
+    Browse by Area
+   </h2>
+   <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6" id="areaFilters">
+    <button class="area-filter bg-yellow-50 rounded-lg p-4 font-semibold hover:bg-yellow-400 hover:text-white transition focus:outline-none" data-area="Gachibowli">
+     Gachibowli
+    </button>
+    <button class="area-filter bg-yellow-50 rounded-lg p-4 font-semibold hover:bg-yellow-400 hover:text-white transition focus:outline-none" data-area="Madhapur">
+     Madhapur
+    </button>
+    <button class="area-filter bg-yellow-50 rounded-lg p-4 font-semibold hover:bg-yellow-400 hover:text-white transition focus:outline-none" data-area="Kukatpally">
+     Kukatpally
+    </button>
+    <button class="area-filter bg-yellow-50 rounded-lg p-4 font-semibold hover:bg-yellow-400 hover:text-white transition focus:outline-none" data-area="Hitech City">
+     Hitech City
+    </button>
+   </div>
+  </section>
+  <!-- Post a Job Section -->
+  <section class="py-16 bg-yellow-50 max-w-4xl mx-auto px-6 text-indigo-900 rounded-lg shadow" id="post-job">
+   <h2 class="text-3xl font-bold mb-8 text-center">
+    Need a Worker? Post Your Requirement Now
+   </h2>
+   <form aria-label="Post a job form" class="space-y-6" id="postJobForm" method="POST" novalidate="">
+    <div>
+     <label class="block font-semibold mb-2" for="job-title">
+      Job Title
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400" id="job-title" name="job-title" placeholder="E.g. Need plumber for kitchen leak" required="" type="text"/>
+     <p class="text-red-600 text-sm mt-1 hidden" id="jobTitleError">
+      Please enter a job title.
+     </p>
+    </div>
+    <div>
+     <label class="block font-semibold mb-2" for="location-select">
+      Select Area
+     </label>
+     <select class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400" id="location-select" name="location-select" required="">
+      <option disabled="" selected="" value="">
+       Select an area
+      </option>
+      <option value="Gachibowli">
+       Gachibowli
+      </option>
+      <option value="Madhapur">
+       Madhapur
+      </option>
+      <option value="Kukatpally">
+       Kukatpally
+      </option>
+      <option value="Hitech City">
+       Hitech City
+      </option>
+     </select>
+     <p class="text-red-600 text-sm mt-1 hidden" id="locationSelectError">
+      Please select an area.
+     </p>
+    </div>
+    <div>
+     <label class="block font-semibold mb-2" for="job-description">
+      Job Description
+     </label>
+     <textarea class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none" id="job-description" name="job-description" placeholder="Describe the job in detail" required="" rows="4"></textarea>
+     <p class="text-red-600 text-sm mt-1 hidden" id="jobDescError">
+      Please enter a job description.
+     </p>
+    </div>
+    <button class="w-full bg-yellow-400 text-indigo-900 font-semibold py-3 rounded-md hover:bg-yellow-500 transition focus:outline-none" type="submit">
+     Post Job
+    </button>
+   </form>
+   <div class="hidden mt-4 text-green-600 font-semibold text-center" id="postJobSuccess" role="alert">
+    Job posted successfully!
+   </div>
+  </section>
+  <!-- Register Section -->
+  <section class="py-16 bg-white max-w-4xl mx-auto px-6 text-indigo-900 rounded-lg shadow mt-12" id="register">
+   <h2 class="text-3xl font-bold mb-8 text-center">
+    Sign Up / Login
+   </h2>
+   <div class="max-w-md mx-auto space-y-6">
+    <div>
+     <label class="block font-semibold mb-2" for="user-role">
+      I am a
+     </label>
+     <select class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400" id="user-role">
+      <option disabled="" selected="" value="">
+       Select role
+      </option>
+      <option value="worker">
+       Worker
+      </option>
+      <option value="employer">
+       Employer
+      </option>
+     </select>
+    </div>
+    <button class="w-full bg-yellow-400 text-indigo-900 font-semibold py-3 rounded-md hover:bg-yellow-500 transition focus:outline-none" id="signupWorkerBtn">
+     Sign Up
+    </button>
+    <button class="w-full border border-yellow-400 text-yellow-400 font-semibold py-3 rounded-md hover:bg-yellow-400 hover:text-indigo-900 transition focus:outline-none" id="loginWorkerBtn">
+     Login
+    </button>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="py-16 bg-indigo-700 text-yellow-400 max-w-4xl mx-auto px-6 rounded-lg mt-12" id="contact">
+   <h2 class="text-3xl font-bold mb-8 text-center">
+    Contact Us
+   </h2>
+   <form aria-label="Contact form" class="space-y-6" id="contactForm" method="POST" novalidate="">
+    <div>
+     <label class="block font-semibold mb-2" for="contact-name">
+      Name
+     </label>
+     <input class="w-full rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300 text-indigo-900" id="contact-name" name="contact-name" placeholder="Your full name" required="" type="text"/>
+     <p class="text-red-600 text-sm mt-1 hidden" id="contactNameError">
+      Please enter your name.
+     </p>
+    </div>
+    <div>
+     <label class="block font-semibold mb-2" for="contact-email">
+      Email
+     </label>
+     <input class="w-full rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300 text-indigo-900" id="contact-email" name="contact-email" placeholder="you@example.com" required="" type="email"/>
+     <p class="text-red-600 text-sm mt-1 hidden" id="contactEmailError">
+      Please enter a valid email.
+     </p>
+    </div>
+    <div>
+     <label class="block font-semibold mb-2" for="contact-message">
+      Message
+     </label>
+     <textarea class="w-full rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300 text-indigo-900 resize-none" id="contact-message" name="contact-message" placeholder="Write your message here" required="" rows="5"></textarea>
+     <p class="text-red-600 text-sm mt-1 hidden" id="contactMessageError">
+      Please enter a message.
+     </p>
+    </div>
+    <button class="w-full bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-semibold py-3 rounded-md transition" type="submit">
+     Send Message
+    </button>
+   </form>
+   <div class="hidden mt-4 text-green-600 font-semibold text-center" id="contactSuccess" role="alert">
+    Message sent successfully!
+   </div>
+   <div class="mt-12 text-center space-y-3">
+    <p>
+     <i class="fas fa-phone-alt mr-2">
+     </i>
+     +91 98765 43210
+    </p>
+    <p>
+     <i class="fas fa-envelope mr-2">
+     </i>
+     support@gigg.in
+    </p>
+    <p>
+     <i class="fas fa-map-marker-alt mr-2">
+     </i>
+     123 Gigg Street, Hyderabad,
+        Telangana
+    </p>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-indigo-900 text-yellow-300 py-8 mt-auto">
+   <div class="container mx-auto max-w-7xl px-6 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-sm">
+     © 2024 Gigg. All rights reserved.
+    </p>
+    <div class="space-x-6 mt-4 md:mt-0">
+     <a aria-label="Facebook" class="hover:text-yellow-400" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-yellow-400" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-yellow-400" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-yellow-400" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+          if (!mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.add("hidden");
+          }
+        }
+      });
+    });
+
+    // Scroll buttons
+    document.getElementById("postJobBtn").addEventListener("click", () => {
+      document.getElementById("post-job").scrollIntoView({ behavior: "smooth" });
+    });
+    document.getElementById("getWorkBtn").addEventListener("click", () => {
+      document.getElementById("register").scrollIntoView({ behavior: "smooth" });
+    });
+    document.getElementById("signupBtn").addEventListener("click", () => {
+      document.getElementById("register").scrollIntoView({ behavior: "smooth" });
+    });
+    document.getElementById("loginBtn").addEventListener("click", () => {
+      alert("Login functionality coming soon!");
+    });
+
+    // Area filters (just demo alert)
+    document.querySelectorAll(".area-filter").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        alert(`Filtering gigs for area: ${btn.dataset.area}`);
+      });
+    });
+
+    // Form validation helpers
+    function showError(id) {
+      document.getElementById(id).classList.remove("hidden");
+    }
+    function hideError(id) {
+      document.getElementById(id).classList.add("hidden");
+    }
+
+    // Post Job Form Validation & Submission
+    const postJobForm = document.getElementById("postJobForm");
+    postJobForm.querySelector("#date").setAttribute("min", new Date().toISOString().split("T")[0]);
+    postJobForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let valid = true;
+
+      const title = postJobForm["job-title"].value.trim();
+      const desc = postJobForm["job-description"].value.trim();
+      const location = postJobForm["location-select"].value;
+
+      if (!title) {
+        showError("jobTitleError");
+        valid = false;
+      } else {
+        hideError("jobTitleError");
+      }
+      if (!desc) {
+        showError("jobDescError");
+        valid = false;
+      } else {
+        hideError("jobDescError");
+      }
+      if (!location) {
+        showError("locationSelectError");
+        valid = false;
+      } else {
+        hideError("locationSelectError");
+      }
+
+      if (!valid) return;
+
+      // Simulate submission
+      postJobForm.reset();
+      document.getElementById("postJobSuccess").classList.remove("hidden");
+      setTimeout(() => {
+        document.getElementById("postJobSuccess").classList.add("hidden");
+      }, 5000);
+    });
+
+    // Contact Form Validation & Submission
+    const contactForm = document.getElementById("contactForm");
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let valid = true;
+
+      const name = contactForm["contact-name"].value.trim();
+      const email = contactForm["contact-email"].value.trim();
+      const message = contactForm["contact-message"].value.trim();
+
+      if (!name) {
+        showError("contactNameError");
+        valid = false;
+      } else {
+        hideError("contactNameError");
+      }
+      if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+        showError("contactEmailError");
+        valid = false;
+      } else {
+        hideError("contactEmailError");
+      }
+      if (!message) {
+        showError("contactMessageError");
+        valid = false;
+      } else {
+        hideError("contactMessageError");
+      }
+
+      if (!valid) return;
+
+      // Simulate submission
+      contactForm.reset();
+      document.getElementById("contactSuccess").classList.remove("hidden");
+      setTimeout(() => {
+        document.getElementById("contactSuccess").classList.add("hidden");
+      }, 5000);
+    });
+  </script>
+ </body>
+</html>

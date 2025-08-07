@@ -1,0 +1,1317 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Gigg - Hyderabad’s All-in-One Gig Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div
+      class="container mx-auto flex items-center justify-between px-6 py-4 max-w-7xl"
+    >
+      <a
+        aria-label="Gigg homepage"
+        class="flex items-center space-x-2 text-indigo-600 font-extrabold text-2xl"
+        href="#"
+      >
+        <img
+          alt="Gigg logo, stylized letter G in blue-purple gradient"
+          class="rounded-full"
+          height="40"
+          src="https://storage.googleapis.com/a1aa/image/255e19cf-d117-4357-fad9-61ec4af22872.jpg"
+          width="40"
+        />
+        <span>Gigg</span>
+      </a>
+      <nav
+        aria-label="Primary Navigation"
+        class="hidden md:flex space-x-8 text-gray-700 font-semibold text-sm"
+      >
+        <a class="hover:text-indigo-600 transition" href="#hero">Home</a>
+        <a class="hover:text-indigo-600 transition" href="#features"
+          >Features</a
+        >
+        <a class="hover:text-indigo-600 transition" href="#categories"
+          >Categories</a
+        >
+        <a class="hover:text-indigo-600 transition" href="#instant-gig"
+          >Instant Gig</a
+        >
+        <a class="hover:text-indigo-600 transition" href="#testimonials"
+          >Testimonials</a
+        >
+        <a class="hover:text-indigo-600 transition" href="#stats">Stats</a>
+        <a class="hover:text-indigo-600 transition" href="#post-job"
+          >Post a Job</a
+        >
+        <a class="hover:text-indigo-600 transition" href="#register"
+          >Register</a
+        >
+        <a class="hover:text-indigo-600 transition" href="#contact"
+          >Contact</a
+        >
+      </nav>
+      <div class="hidden md:flex space-x-4">
+        <button
+          id="loginBtn"
+          class="text-indigo-600 font-semibold hover:underline focus:outline-none"
+        >
+          Login
+        </button>
+        <button
+          id="signupBtn"
+          class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition font-semibold focus:outline-none"
+        >
+          Sign Up
+        </button>
+      </div>
+      <button
+        aria-label="Toggle menu"
+        class="md:hidden text-gray-700 focus:outline-none"
+        id="mobile-menu-button"
+      >
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <nav
+      aria-label="Mobile Navigation"
+      class="hidden md:hidden bg-white border-t border-gray-200"
+      id="mobile-menu"
+    >
+      <a
+        class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50"
+        href="#hero"
+        >Home</a
+      >
+      <a
+        class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50"
+        href="#features"
+        >Features</a
+      >
+      <a
+        class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50"
+        href="#categories"
+        >Categories</a
+      >
+      <a
+        class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50"
+        href="#instant-gig"
+        >Instant Gig</a
+      >
+      <a
+        class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50"
+        href="#testimonials"
+        >Testimonials</a
+      >
+      <a
+        class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50"
+        href="#stats"
+        >Stats</a
+      >
+      <a
+        class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50"
+        href="#post-job"
+        >Post a Job</a
+      >
+      <a
+        class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50"
+        href="#register"
+        >Register</a
+      >
+      <a
+        class="block px-6 py-3 border-b border-gray-200 text-gray-700 font-semibold hover:bg-indigo-50"
+        href="#contact"
+        >Contact</a
+      >
+      <a
+        class="block px-6 py-3 border-t border-gray-200 text-indigo-600 font-semibold hover:bg-indigo-50"
+        href="#login"
+        >Login</a
+      >
+      <a
+        class="block px-6 py-3 text-white bg-indigo-600 font-semibold hover:bg-indigo-700"
+        href="#register"
+        >Sign Up</a
+      >
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="bg-indigo-700 text-white py-20 px-6 md:px-0 flex flex-col md:flex-row items-center max-w-7xl mx-auto"
+    id="hero"
+  >
+    <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+        Hyderabad’s All-in-One Gig Platform
+        <br />
+        <span class="text-yellow-400">From Hourly Help to Long-Term Work</span>
+      </h1>
+      <p class="text-lg md:text-xl mb-8 max-w-xl mx-auto md:mx-0">
+        Gigg connects individuals and businesses with skilled and unskilled
+        workers for all types of jobs — from 1-hour gigs to full-time roles.
+      </p>
+      <form
+        id="quickSearchForm"
+        aria-label="Quick search form"
+        class="bg-white rounded-lg p-4 flex flex-col sm:flex-row items-center max-w-xl mx-auto md:mx-0 shadow"
+      >
+        <input
+          id="quickSearchInput"
+          aria-label="Search tasks or jobs"
+          class="flex-grow rounded-md border border-gray-300 px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 mb-4 sm:mb-0 sm:mr-4"
+          placeholder="I need help with..."
+          type="text"
+          required
+        />
+        <select
+          id="quickSearchMode"
+          aria-label="Select mode"
+          class="rounded-md border border-gray-300 px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400 mb-4 sm:mb-0 sm:mr-4"
+        >
+          <option selected value="find">Find a Gig</option>
+          <option value="post">Post a Job</option>
+        </select>
+        <button
+          type="submit"
+          class="bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-semibold px-6 py-3 rounded-md transition w-full sm:w-auto"
+        >
+          Search
+        </button>
+      </form>
+      <div
+        class="mt-8 flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 justify-center md:justify-start"
+      >
+        <button
+          id="postJobBtn"
+          class="bg-yellow-400 text-indigo-900 font-semibold px-6 py-3 rounded-md hover:bg-yellow-500 transition text-center focus:outline-none"
+        >
+          Post a Job
+        </button>
+        <button
+          id="registerWorkerBtn"
+          class="border border-yellow-400 text-yellow-400 font-semibold px-6 py-3 rounded-md hover:bg-yellow-400 hover:text-indigo-900 transition text-center focus:outline-none"
+        >
+          Register as a Worker
+        </button>
+      </div>
+    </div>
+    <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+      <img
+        alt="Illustration of diverse Hyderabad gig workers and clients connecting via mobile and laptop"
+        class="rounded-lg shadow-lg max-w-full h-auto"
+        height="350"
+        src="https://storage.googleapis.com/a1aa/image/dd6a542b-9980-4d08-030c-042c53457f9e.jpg"
+        width="500"
+      />
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section
+    class="py-16 bg-yellow-50 max-w-7xl mx-auto px-6 text-indigo-900"
+    id="features"
+  >
+    <h2 class="text-3xl font-bold mb-12 text-center">Key Features</h2>
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto"
+      id="featuresList"
+    >
+      <div
+        class="flex flex-col items-center text-center space-y-4"
+        tabindex="0"
+        role="button"
+        aria-pressed="false"
+      >
+        <img
+          alt="Icon representing hyperlocal location-based services"
+          class="mb-2"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/fe1b3cbd-cfae-49f5-49e2-9b2289246d13.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold">Hyperlocal Model</h3>
+        <p>
+          Focused on Hyderabad to ensure dense, quality supply and demand for
+          gigs.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center text-center space-y-4"
+        tabindex="0"
+        role="button"
+        aria-pressed="false"
+      >
+        <img
+          alt="Icon representing verified workers with badge"
+          class="mb-2"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/27e2d191-f3dd-411b-4dda-bd392fc23ff3.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold">Verified Workers</h3>
+        <p>
+          Police-verified or community-reviewed profiles to build trust and
+          safety.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center text-center space-y-4"
+        tabindex="0"
+        role="button"
+        aria-pressed="false"
+      >
+        <img
+          alt="Icon representing instant gig feature with clock and lightning bolt"
+          class="mb-2"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/620a9345-9fbb-4b11-1377-821e54feaa98.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold">Instant Gig</h3>
+        <p>
+          Book someone nearby for urgent tasks in real-time with our instant
+          gig feature.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center text-center space-y-4"
+        tabindex="0"
+        role="button"
+        aria-pressed="false"
+      >
+        <img
+          alt="Icon representing multilingual support with speech bubbles"
+          class="mb-2"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/4b30c5b9-4f7e-440e-d9b0-a71ebb9c522d.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold">Multilingual Support</h3>
+        <p>Available in English, Hindi, and Telugu for wider accessibility.</p>
+      </div>
+      <div
+        class="flex flex-col items-center text-center space-y-4"
+        tabindex="0"
+        role="button"
+        aria-pressed="false"
+      >
+        <img
+          alt="Icon representing wage and hour filter with rupee and clock"
+          class="mb-2"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/09879477-c410-43fb-a29e-51c53c2f5be4.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold">Wage/Hour Filter</h3>
+        <p>Sort gigs by hourly wage, skill level, and duration to find the best fit.</p>
+      </div>
+      <div
+        class="flex flex-col items-center text-center space-y-4"
+        tabindex="0"
+        role="button"
+        aria-pressed="false"
+      >
+        <img
+          alt="Icon representing A to Z service categories with checklist"
+          class="mb-2"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/8d2af80c-9063-432b-c6da-42332fcda352.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold">A to Z Service Categories</h3>
+        <p>From tech to household help, logistics to hospitality — all covered.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section
+    class="py-16 bg-white max-w-7xl mx-auto px-6 text-indigo-900"
+    id="categories"
+  >
+    <h2 class="text-3xl font-bold mb-12 text-center">Service Categories</h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto"
+      id="categoryList"
+    >
+      <a
+        href="#"
+        class="bg-yellow-50 rounded-lg p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition"
+        data-category="Home Services"
+      >
+        <img
+          alt="Icon representing Home Services category with broom, wrench, and cooking pot"
+          class="mb-4"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/7fd54760-56af-465e-3ea0-54ec94cd31d8.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold mb-2">Home Services</h3>
+        <p class="text-gray-700 text-sm">
+          Cleaning, cooking, plumbing, electrical &amp; handyman jobs.
+        </p>
+      </a>
+      <a
+        href="#"
+        class="bg-yellow-50 rounded-lg p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition"
+        data-category="Tech Support"
+      >
+        <img
+          alt="Icon representing Tech Support category with laptop and code brackets"
+          class="mb-4"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/36d5ae22-0c65-4942-3bf7-ea81c1d1de47.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold mb-2">Tech Support</h3>
+        <p class="text-gray-700 text-sm">
+          Coding, digital marketing, IT support &amp; more.
+        </p>
+      </a>
+      <a
+        href="#"
+        class="bg-yellow-50 rounded-lg p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition"
+        data-category="Delivery"
+      >
+        <img
+          alt="Icon representing Delivery category with delivery truck"
+          class="mb-4"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/55c7a37b-aa16-4dce-5cda-93bc8a50127f.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold mb-2">Delivery</h3>
+        <p class="text-gray-700 text-sm">Parcel delivery, courier, transport.</p>
+      </a>
+      <a
+        href="#"
+        class="bg-yellow-50 rounded-lg p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition"
+        data-category="Labour"
+      >
+        <img
+          alt="Icon representing Labour category with worker helmet and tools"
+          class="mb-4"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/b6981128-f3d9-47ff-2276-7ad4cadfd997.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold mb-2">Labour</h3>
+        <p class="text-gray-700 text-sm">Skilled and unskilled daily wage jobs.</p>
+      </a>
+      <a
+        href="#"
+        class="bg-yellow-50 rounded-lg p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition"
+        data-category="Events"
+      >
+        <img
+          alt="Icon representing Events category with catering tray and wedding rings"
+          class="mb-4"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/2d3ec0b6-1104-430c-01a0-7ff7983f1726.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold mb-2">Events</h3>
+        <p class="text-gray-700 text-sm">
+          Wedding, catering, decoration &amp; support staff.
+        </p>
+      </a>
+      <a
+        href="#"
+        class="bg-yellow-50 rounded-lg p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition"
+        data-category="Freelancers"
+      >
+        <img
+          alt="Icon representing Freelancers category with pen, laptop, and design tools"
+          class="mb-4"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/4e249072-d6ac-4292-3171-9ca5a7ddfce7.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold mb-2">Freelancers</h3>
+        <p class="text-gray-700 text-sm">
+          Writing, editing, design, development &amp; marketing.
+        </p>
+      </a>
+      <a
+        href="#"
+        class="bg-yellow-50 rounded-lg p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition"
+        data-category="Tutors"
+      >
+        <img
+          alt="Icon representing Tutors category with book and graduation cap"
+          class="mb-4"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/ebfe9f96-6c2c-400c-f1f2-d48119c3d1ff.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold mb-2">Tutors</h3>
+        <p class="text-gray-700 text-sm">Tuition and educational help.</p>
+      </a>
+      <a
+        href="#"
+        class="bg-yellow-50 rounded-lg p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition"
+        data-category="Elder Care"
+      >
+        <img
+          alt="Icon representing Elder Care category with nurse cap and heart symbol"
+          class="mb-4"
+          height="80"
+          src="https://storage.googleapis.com/a1aa/image/2150478f-cdf1-40cd-1a94-154ce567087c.jpg"
+          width="80"
+        />
+        <h3 class="text-xl font-semibold mb-2">Elder Care</h3>
+        <p class="text-gray-700 text-sm">Nurses, caretakers, and health assistants.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Instant Gig Locator -->
+  <section
+    class="py-16 bg-yellow-100 max-w-7xl mx-auto px-6 text-indigo-900"
+    id="instant-gig"
+  >
+    <h2 class="text-3xl font-bold mb-12 text-center">Instant Gig Locator</h2>
+    <div class="max-w-5xl mx-auto">
+      <img
+        alt="Map of Hyderabad showing instant gig locations with pins"
+        class="rounded-lg shadow-lg w-full h-auto"
+        height="400"
+        src="https://storage.googleapis.com/a1aa/image/12ba56c6-a279-4fb5-d9d5-f98e6b81797f.jpg"
+        width="900"
+      />
+      <p class="mt-6 text-center max-w-3xl mx-auto">
+        Book workers nearby instantly for urgent tasks using our real-time
+        location-based matching.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section
+    class="py-16 bg-white max-w-7xl mx-auto px-6 text-indigo-900"
+    id="testimonials"
+  >
+    <h2 class="text-3xl font-bold mb-10 text-center">What Our Users Say</h2>
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
+      id="testimonialList"
+    >
+      <div class="bg-yellow-50 rounded-lg p-6 shadow">
+        <div class="flex items-center mb-4">
+          <img
+            alt="Profile photo of Ravi Kumar"
+            class="rounded-full mr-4"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/332c3e38-f3f4-4ae0-f484-ea562bcd7334.jpg"
+            width="48"
+          />
+          <div>
+            <p class="font-semibold text-yellow-700">Ravi Kumar</p>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-indigo-900 text-sm">
+          Found a great plumber quickly. The instant gig feature saved my day!
+        </p>
+      </div>
+      <div class="bg-yellow-50 rounded-lg p-6 shadow">
+        <div class="flex items-center mb-4">
+          <img
+            alt="Profile photo of Anita Sharma"
+            class="rounded-full mr-4"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/ed5efa63-8f89-4a87-f066-13118a1e0763.jpg"
+            width="48"
+          />
+          <div>
+            <p class="font-semibold text-yellow-700">Anita Sharma</p>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-indigo-900 text-sm">
+          As a worker, I love the verified badge and local focus. It’s helped me
+          get steady gigs.
+        </p>
+      </div>
+      <div class="bg-yellow-50 rounded-lg p-6 shadow">
+        <div class="flex items-center mb-4">
+          <img
+            alt="Profile photo of Suresh Patel"
+            class="rounded-full mr-4"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/b9881599-c671-4fac-1f2b-98a8cf057f04.jpg"
+            width="48"
+          />
+          <div>
+            <p class="font-semibold text-yellow-700">Suresh Patel</p>
+            <div class="flex text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-indigo-900 text-sm">
+          The hyperlocal matching is fantastic. I found a tutor nearby within
+          minutes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section
+    class="py-16 bg-yellow-50 max-w-7xl mx-auto px-6 text-indigo-900"
+    id="stats"
+  >
+    <h2 class="text-3xl font-bold mb-12 text-center">Our Impact So Far</h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-8 max-w-6xl mx-auto text-center"
+    >
+      <div>
+        <p class="text-4xl font-extrabold text-yellow-400" id="gigsPosted">0+</p>
+        <p class="mt-2 font-semibold">Gigs Posted</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold text-yellow-400" id="peopleHired">0+</p>
+        <p class="mt-2 font-semibold">People Hired</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold text-yellow-400" id="verifiedWorkers">0+</p>
+        <p class="mt-2 font-semibold">Verified Workers</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold text-yellow-400" id="jobCompletion">0%</p>
+        <p class="mt-2 font-semibold">Job Completion Rate</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold text-yellow-400" id="supportAvailability">0/7</p>
+        <p class="mt-2 font-semibold">Support Availability</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold text-yellow-400" id="languagesSupported">0</p>
+        <p class="mt-2 font-semibold">Languages Supported</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Post a Job Section -->
+  <section
+    class="py-16 bg-white max-w-4xl mx-auto px-6 text-indigo-900"
+    id="post-job"
+  >
+    <h2 class="text-3xl font-bold mb-8 text-center">Post a Job</h2>
+    <form
+      id="postJobForm"
+      aria-label="Post a job form"
+      class="bg-yellow-50 rounded-lg shadow p-8 space-y-6"
+      method="POST"
+      novalidate
+    >
+      <div>
+        <label class="block font-semibold mb-2" for="job-title">Job Title</label>
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="job-title"
+          name="job-title"
+          placeholder="E.g. Need plumber for kitchen leak"
+          required
+          type="text"
+        />
+        <p class="text-red-600 text-sm mt-1 hidden" id="jobTitleError">
+          Please enter a job title.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="job-description"
+          >Job Description</label
+        >
+        <textarea
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none"
+          id="job-description"
+          name="job-description"
+          placeholder="Describe the job in detail"
+          required
+          rows="4"
+        ></textarea>
+        <p class="text-red-600 text-sm mt-1 hidden" id="jobDescError">
+          Please enter a job description.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="category">Category</label>
+        <select
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="category"
+          name="category"
+          required
+        >
+          <option disabled selected value="">Select a category</option>
+          <option>Home Services</option>
+          <option>Tech Support</option>
+          <option>Delivery</option>
+          <option>Labour</option>
+          <option>Events</option>
+          <option>Freelancers</option>
+          <option>Tutors</option>
+          <option>Elder Care</option>
+          <option>Custom Gigs</option>
+        </select>
+        <p class="text-red-600 text-sm mt-1 hidden" id="categoryError">
+          Please select a category.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="location"
+          >Location (PIN code or area)</label
+        >
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="location"
+          name="location"
+          placeholder="E.g. 500081 or Gachibowli"
+          required
+          type="text"
+        />
+        <p class="text-red-600 text-sm mt-1 hidden" id="locationError">
+          Please enter a location.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div>
+          <label class="block font-semibold mb-2" for="date">Preferred Date</label>
+          <input
+            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            id="date"
+            name="date"
+            required
+            type="date"
+            min=""
+          />
+          <p class="text-red-600 text-sm mt-1 hidden" id="dateError">
+            Please select a valid date.
+          </p>
+        </div>
+        <div>
+          <label class="block font-semibold mb-2" for="time">Preferred Time</label>
+          <input
+            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            id="time"
+            name="time"
+            required
+            type="time"
+          />
+          <p class="text-red-600 text-sm mt-1 hidden" id="timeError">
+            Please select a time.
+          </p>
+        </div>
+        <div>
+          <label class="block font-semibold mb-2" for="duration">Duration (hours)</label>
+          <input
+            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            id="duration"
+            max="24"
+            min="1"
+            name="duration"
+            placeholder="E.g. 2"
+            required
+            type="number"
+          />
+          <p class="text-red-600 text-sm mt-1 hidden" id="durationError">
+            Please enter a valid duration (1-24 hours).
+          </p>
+        </div>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="budget">Budget (₹)</label>
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="budget"
+          min="100"
+          name="budget"
+          placeholder="E.g. 500"
+          required
+          type="number"
+        />
+        <p class="text-red-600 text-sm mt-1 hidden" id="budgetError">
+          Please enter a budget of at least ₹100.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="contact-info"
+          >Your Contact Info (Mobile/Email)</label
+        >
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="contact-info"
+          name="contact-info"
+          placeholder="+91 9876543210 or email@example.com"
+          required
+          type="text"
+        />
+        <p class="text-red-600 text-sm mt-1 hidden" id="contactInfoError">
+          Please enter your contact info.
+        </p>
+      </div>
+      <button
+        class="w-full bg-yellow-400 text-indigo-900 font-semibold py-3 rounded-md hover:bg-yellow-500 transition"
+        type="submit"
+      >
+        Submit Job
+      </button>
+    </form>
+    <div
+      id="postJobSuccess"
+      class="hidden mt-4 text-green-600 font-semibold text-center"
+      role="alert"
+    >
+      Job posted successfully!
+    </div>
+  </section>
+
+  <!-- Register as Worker Section -->
+  <section
+    class="py-16 bg-yellow-50 max-w-4xl mx-auto px-6 text-indigo-900"
+    id="register"
+  >
+    <h2 class="text-3xl font-bold mb-10 text-center">Register as a Worker</h2>
+    <form
+      id="registerWorkerForm"
+      aria-label="Worker registration and KYC form"
+      class="bg-white rounded-lg shadow p-8 space-y-6"
+      method="POST"
+      novalidate
+    >
+      <div>
+        <label class="block font-semibold mb-2" for="full-name">Full Name</label>
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="full-name"
+          name="full-name"
+          placeholder="Your full name"
+          required
+          type="text"
+        />
+        <p class="text-red-600 text-sm mt-1 hidden" id="fullNameError">
+          Please enter your full name.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="email">Email</label>
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+          type="email"
+        />
+        <p class="text-red-600 text-sm mt-1 hidden" id="emailError">
+          Please enter a valid email.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="mobile">Mobile Number</label>
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="mobile"
+          name="mobile"
+          placeholder="+91 9876543210"
+          required
+          type="tel"
+          pattern="^\+91\s?\d{10}$"
+          title="Format: +91 9876543210"
+        />
+        <p class="text-red-600 text-sm mt-1 hidden" id="mobileError">
+          Please enter a valid Indian mobile number.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="aadhaar"
+          >Aadhaar Number (for KYC)</label
+        >
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="aadhaar"
+          name="aadhaar"
+          pattern="\d{4}-\d{4}-\d{4}"
+          placeholder="XXXX-XXXX-XXXX"
+          required
+          title="Format: XXXX-XXXX-XXXX"
+          type="text"
+        />
+        <p class="text-red-600 text-sm mt-1 hidden" id="aadhaarError">
+          Please enter a valid Aadhaar number in XXXX-XXXX-XXXX format.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="skills">Skills</label>
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="skills"
+          name="skills"
+          placeholder="E.g. Plumbing, Electrical, Tutoring"
+          type="text"
+        />
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="languages">Languages Spoken</label>
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="languages"
+          name="languages"
+          placeholder="E.g. Telugu, Hindi, English"
+          type="text"
+        />
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="availability">Availability</label>
+        <select
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="availability"
+          name="availability"
+          required
+        >
+          <option disabled selected value="">Select availability</option>
+          <option>Full-time</option>
+          <option>Part-time</option>
+          <option>Weekends</option>
+          <option>Flexible</option>
+        </select>
+        <p class="text-red-600 text-sm mt-1 hidden" id="availabilityError">
+          Please select your availability.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="experience">Experience (years)</label>
+        <input
+          class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          id="experience"
+          max="50"
+          min="0"
+          name="experience"
+          placeholder="E.g. 3"
+          type="number"
+        />
+      </div>
+      <button
+        class="w-full bg-yellow-400 text-indigo-900 font-semibold py-3 rounded-md hover:bg-yellow-500 transition"
+        type="submit"
+      >
+        Register &amp; Verify
+      </button>
+    </form>
+    <div
+      id="registerSuccess"
+      class="hidden mt-4 text-green-600 font-semibold text-center"
+      role="alert"
+    >
+      Registration successful! We will contact you soon.
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section
+    class="py-16 bg-indigo-700 text-yellow-400 max-w-4xl mx-auto px-6 rounded-lg mt-12"
+    id="contact"
+  >
+    <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+    <form
+      id="contactForm"
+      aria-label="Contact form"
+      class="space-y-6"
+      method="POST"
+      novalidate
+    >
+      <div>
+        <label class="block font-semibold mb-2" for="contact-name">Name</label>
+        <input
+          class="w-full rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300 text-indigo-900"
+          id="contact-name"
+          name="contact-name"
+          placeholder="Your full name"
+          required
+          type="text"
+        />
+        <p class="text-red-600 text-sm mt-1 hidden" id="contactNameError">
+          Please enter your name.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="contact-email">Email</label>
+        <input
+          class="w-full rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300 text-indigo-900"
+          id="contact-email"
+          name="contact-email"
+          placeholder="you@example.com"
+          required
+          type="email"
+        />
+        <p class="text-red-600 text-sm mt-1 hidden" id="contactEmailError">
+          Please enter a valid email.
+        </p>
+      </div>
+      <div>
+        <label class="block font-semibold mb-2" for="contact-message">Message</label>
+        <textarea
+          class="w-full rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-300 text-indigo-900 resize-none"
+          id="contact-message"
+          name="contact-message"
+          placeholder="Write your message here"
+          required
+          rows="5"
+        ></textarea>
+        <p class="text-red-600 text-sm mt-1 hidden" id="contactMessageError">
+          Please enter a message.
+        </p>
+      </div>
+      <button
+        class="w-full bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-semibold py-3 rounded-md transition"
+        type="submit"
+      >
+        Send Message
+      </button>
+    </form>
+    <div
+      id="contactSuccess"
+      class="hidden mt-4 text-green-600 font-semibold text-center"
+      role="alert"
+    >
+      Message sent successfully!
+    </div>
+    <div class="mt-12 text-center space-y-3">
+      <p>
+        <i class="fas fa-phone-alt mr-2"></i> +91 98765 43210
+      </p>
+      <p>
+        <i class="fas fa-envelope mr-2"></i> support@gigg.in
+      </p>
+      <p>
+        <i class="fas fa-map-marker-alt mr-2"></i> 123 Gigg Street, Hyderabad,
+        Telangana
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-900 text-yellow-300 py-8 mt-auto">
+    <div
+      class="container mx-auto max-w-7xl px-6 flex flex-col md:flex-row justify-between items-center"
+    >
+      <p class="text-sm">© 2024 Gigg. All rights reserved.</p>
+      <div class="space-x-6 mt-4 md:mt-0">
+        <a aria-label="Facebook" class="hover:text-yellow-400" href="#"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a aria-label="Twitter" class="hover:text-yellow-400" href="#"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a aria-label="LinkedIn" class="hover:text-yellow-400" href="#"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a aria-label="Instagram" class="hover:text-yellow-400" href="#"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    mobileMenuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+          if (!mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.add("hidden");
+          }
+        }
+      });
+    });
+
+    // Quick Search Form
+    const quickSearchForm = document.getElementById("quickSearchForm");
+    quickSearchForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const query = document.getElementById("quickSearchInput").value.trim();
+      const mode = document.getElementById("quickSearchMode").value;
+      if (!query) {
+        alert("Please enter a search query.");
+        return;
+      }
+      if (mode === "find") {
+        alert(`Searching gigs for: "${query}"`);
+        // Here you would redirect or fetch gigs matching query
+      } else {
+        alert(`Redirecting to post a job with title: "${query}"`);
+        // Redirect to post job form with prefilled title
+        document.getElementById("post-job").scrollIntoView({ behavior: "smooth" });
+        document.getElementById("job-title").value = query;
+      }
+    });
+
+    // Scroll buttons
+    document.getElementById("postJobBtn").addEventListener("click", () => {
+      document.getElementById("post-job").scrollIntoView({ behavior: "smooth" });
+    });
+    document.getElementById("registerWorkerBtn").addEventListener("click", () => {
+      document.getElementById("register").scrollIntoView({ behavior: "smooth" });
+    });
+
+    // Form validation helpers
+    function showError(id) {
+      document.getElementById(id).classList.remove("hidden");
+    }
+    function hideError(id) {
+      document.getElementById(id).classList.add("hidden");
+    }
+
+    // Post Job Form Validation & Submission
+    const postJobForm = document.getElementById("postJobForm");
+    postJobForm.querySelector("#date").setAttribute("min", new Date().toISOString().split("T")[0]);
+    postJobForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let valid = true;
+
+      const title = postJobForm["job-title"].value.trim();
+      const desc = postJobForm["job-description"].value.trim();
+      const category = postJobForm["category"].value;
+      const location = postJobForm["location"].value.trim();
+      const date = postJobForm["date"].value;
+      const time = postJobForm["time"].value;
+      const duration = postJobForm["duration"].value;
+      const budget = postJobForm["budget"].value;
+      const contact = postJobForm["contact-info"].value.trim();
+
+      if (!title) {
+        showError("jobTitleError");
+        valid = false;
+      } else {
+        hideError("jobTitleError");
+      }
+      if (!desc) {
+        showError("jobDescError");
+        valid = false;
+      } else {
+        hideError("jobDescError");
+      }
+      if (!category) {
+        showError("categoryError");
+        valid = false;
+      } else {
+        hideError("categoryError");
+      }
+      if (!location) {
+        showError("locationError");
+        valid = false;
+      } else {
+        hideError("locationError");
+      }
+      if (!date || new Date(date) < new Date(new Date().toISOString().split("T")[0])) {
+        showError("dateError");
+        valid = false;
+      } else {
+        hideError("dateError");
+      }
+      if (!time) {
+        showError("timeError");
+        valid = false;
+      } else {
+        hideError("timeError");
+      }
+      if (!duration || duration < 1 || duration > 24) {
+        showError("durationError");
+        valid = false;
+      } else {
+        hideError("durationError");
+      }
+      if (!budget || budget < 100) {
+        showError("budgetError");
+        valid = false;
+      } else {
+        hideError("budgetError");
+      }
+      if (!contact) {
+        showError("contactInfoError");
+        valid = false;
+      } else {
+        hideError("contactInfoError");
+      }
+
+      if (!valid) return;
+
+      // Simulate submission
+      postJobForm.reset();
+      document.getElementById("postJobSuccess").classList.remove("hidden");
+      setTimeout(() => {
+        document.getElementById("postJobSuccess").classList.add("hidden");
+      }, 5000);
+    });
+
+    // Register Worker Form Validation & Submission
+    const registerWorkerForm = document.getElementById("registerWorkerForm");
+    registerWorkerForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let valid = true;
+
+      const fullName = registerWorkerForm["full-name"].value.trim();
+      const email = registerWorkerForm["email"].value.trim();
+      const mobile = registerWorkerForm["mobile"].value.trim();
+      const aadhaar = registerWorkerForm["aadhaar"].value.trim();
+      const availability = registerWorkerForm["availability"].value;
+
+      if (!fullName) {
+        showError("fullNameError");
+        valid = false;
+      } else {
+        hideError("fullNameError");
+      }
+      if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+        showError("emailError");
+        valid = false;
+      } else {
+        hideError("emailError");
+      }
+      if (!mobile || !/^\+91\s?\d{10}$/.test(mobile)) {
+        showError("mobileError");
+        valid = false;
+      } else {
+        hideError("mobileError");
+      }
+      if (!aadhaar || !/^\d{4}-\d{4}-\d{4}$/.test(aadhaar)) {
+        showError("aadhaarError");
+        valid = false;
+      } else {
+        hideError("aadhaarError");
+      }
+      if (!availability) {
+        showError("availabilityError");
+        valid = false;
+      } else {
+        hideError("availabilityError");
+      }
+
+      if (!valid) return;
+
+      // Simulate submission
+      registerWorkerForm.reset();
+      document.getElementById("registerSuccess").classList.remove("hidden");
+      setTimeout(() => {
+        document.getElementById("registerSuccess").classList.add("hidden");
+      }, 5000);
+    });
+
+    // Contact Form Validation & Submission
+    const contactForm = document.getElementById("contactForm");
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let valid = true;
+
+      const name = contactForm["contact-name"].value.trim();
+      const email = contactForm["contact-email"].value.trim();
+      const message = contactForm["contact-message"].value.trim();
+
+      if (!name) {
+        showError("contactNameError");
+        valid = false;
+      } else {
+        hideError("contactNameError");
+      }
+      if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+        showError("contactEmailError");
+        valid = false;
+      } else {
+        hideError("contactEmailError");
+      }
+      if (!message) {
+        showError("contactMessageError");
+        valid = false;
+      } else {
+        hideError("contactMessageError");
+      }
+
+      if (!valid) return;
+
+      // Simulate submission
+      contactForm.reset();
+      document.getElementById("contactSuccess").classList.remove("hidden");
+      setTimeout(() => {
+        document.getElementById("contactSuccess").classList.add("hidden");
+      }, 5000);
+    });
+
+    // Stats animation
+    const stats = {
+      gigsPosted: 12500,
+      peopleHired: 8200,
+      verifiedWorkers: 4500,
+      jobCompletion: 95,
+      supportAvailability: "24/7",
+      languagesSupported: 3,
+    };
+
+    function animateCount(id, target, suffix = "") {
+      const el = document.getElementById(id);
+      if (!el) return;
+      let count = 0;
+      const increment = Math.ceil(target / 100);
+      const interval = setInterval(() => {
+        count += increment;
+        if (count >= target) {
+          count = target;
+          clearInterval(interval);
+        }
+        el.textContent = count + suffix;
+      }, 20);
+    }
+
+    animateCount("gigsPosted", stats.gigsPosted, "+");
+    animateCount("peopleHired", stats.peopleHired, "+");
+    animateCount("verifiedWorkers", stats.verifiedWorkers, "+");
+    animateCount("jobCompletion", stats.jobCompletion, "%");
+    document.getElementById("supportAvailability").textContent =
+      stats.supportAvailability;
+    animateCount("languagesSupported", stats.languagesSupported);
+  </script>
+</body>
+</html>
